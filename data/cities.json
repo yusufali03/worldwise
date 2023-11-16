@@ -1,0 +1,40 @@
+{
+  "cities": [
+    {
+      "cityName": "Lisbon",
+      "country": "Portugal",
+      "emoji": "🇵🇹",
+      "date": "2027-10-31T15:59:59.138Z",
+      "notes": "My favorite city so far!",
+      "position": {
+        "lat": 38.7,
+        "lng": -9.1
+      },
+      "id": 73930385
+    },
+    {
+      "cityName": "Irueste",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2023-11-14T13:47:58.556Z",
+      "notes": "test",
+      "position": {
+        "lat": "40.61454770949123",
+        "lng": "-2.889404296875"
+      },
+      "id": 73930386
+    },
+    {
+      "cityName": "Arce",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2023-11-15T06:45:00.234Z",
+      "notes": "ddd",
+      "position": {
+        "lat": 42.85338036953449,
+        "lng": -1.3854107698494558
+      },
+      "id": 73930392
+    }
+  ]
+}
