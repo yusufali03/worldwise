@@ -10,17 +10,9 @@ const initialState = {
 function reducer(state, action) {
   switch (action.type) {
     case "login":
-      return {
-        ...state,
-        user: action.payload,
-        isAuthenticated: true,
-      };
+      return { ...state, user: action.payload, isAuthenticated: true };
     case "logout":
-      return {
-        ...state,
-        user: null,
-        isAuthenticated: false,
-      };
+      return { ...state, user: null, isAuthenticated: false };
     default:
       throw new Error("Unknown action");
   }
@@ -51,16 +43,14 @@ function AuthProvider({ children }) {
   return (
     <AuthContext.Provider value={{ user, isAuthenticated, login, logout }}>
       {children}
-      {console.log(children)}
     </AuthContext.Provider>
   );
 }
 
 function useAuth() {
-  const context = useContext(AuthProvider);
-
+  const context = useContext(AuthContext);
   if (context === undefined)
-    throw new Error("hook is called up from its parent element");
+    throw new Error("AuthContext was used outside AuthProvider");
   return context;
 }
 
